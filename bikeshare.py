@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+#this declares the data lists for the program
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -176,6 +176,7 @@ def user_stats(df):
     print('-'*40)
 
 def nextfive(df):
+    #this returns five rows at the request of the user
     display_five = input ("Do you want to see the next five rows? yes or no").lower().strip()
     start = 0
     end = 5
@@ -187,6 +188,7 @@ def nextfive(df):
     
     
 def main():
+    #this calls  other functions and establish sequence of the codes
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
