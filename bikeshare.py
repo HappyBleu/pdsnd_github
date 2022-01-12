@@ -188,7 +188,7 @@ def nextfive(df):
     
     
 def main():
-    #this calls all other functions and establish sequence of the codes
+    #this calls  other functions and establish sequence of the codes
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
